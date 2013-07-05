@@ -1,6 +1,10 @@
 # RubyGems JSONP
 
+[![Code Climate](https://codeclimate.com/github/i2bskn/ruby_gems_jsonp.png)](https://codeclimate.com/github/i2bskn/ruby_gems_jsonp)
+
 The wrapper of RubyGems API for JSONP.
+
+URL: [http://rubygems-jsonp.herokuapp.com](http://rubygems-jsonp.herokuapp.com)
 
 ## Installation
 
@@ -10,9 +14,9 @@ Clone from Github and bundle:
     cd ruby_gems_jsonp
     bundle install --path .bundle --without development test
 
-## Deploy
+## Run
 
-use Passenger with config.ru.
+    foreman start
 
 ## Contributing
 
