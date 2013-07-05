@@ -14,15 +14,18 @@
 <div class="container-fluid">
 
 <header class="row-fluid">
-<h1>RubyGems JSONP</h1>
+  <div class="hero-unit">
+    <h2>RubyGems JSONP</h2>
+    <p>The wrapper of RubyGems API for JSONP.</p>
+  </div>
 </header>
 
 <div class="row-fluid">
 
 <section id="base_url">
 <legend>API Base URL</legend>
-<pre>http://rubygems-jsonp.herokuapp.com</pre>
 
+<p>Base URL is <code>http://rubygems-jsonp.herokuapp.com</code>.</p>
 <p>Can specify a callback to all requests.</p>
 
 <pre>
@@ -41,31 +44,53 @@ bar(
 
 <section id="gems">
 <legend>Gem Methods</legend>
+
+<p><span class="label label-info">Sample</span> <a href="/gems/nginx_utils?callback=foo">/gems/nginx_utils?callback=foo</a></p>
 <pre>/gems/[GEM NAME]</pre>
+
+<p><span class="label label-info">Sample</span> <a href="/search?query=nginx_utils&callback=foo">/search?query=nginx_utils&callback=foo</a></p>
 <pre>/search?query=[YOUR QUERY]</pre>
 </section>
 
 <section id="versions">
 <legend>Gem Version Methods</legend>
+
+<p><span class="label label-info">Sample</span> <a href="/versions/nginx_utils?callback=foo">/versions/nginx_utils?callback=foo</a></p>
 <pre>/versions/[GEM NAME]</pre>
+
+<p><span class="label label-info">Sample</span> <a href="/downloads?callback=foo">/downloads?callback=foo</a></p>
 <pre>/downloads</pre>
+
+<p><span class="label label-info">Sample</span> <a href="/downloads/top?callback=foo">/downloads/top?callback=foo</a></p>
 <pre>/downloads/top</pre>
+
+<p><span class="label label-info">Sample</span> <a href="/downloads/all?callback=foo">/downloads/all?callback=foo</a></p>
 <pre>/downloads/all</pre>
+
+<p><span class="label label-info">Sample</span> <a href="/downloads/nginx_utils-0.0.1?callback=foo">/downloads/nginx_utils-0.0.1?callback=foo</a></p>
 <pre>/downloads/[GEM NAME]-[GEM VERSION]</pre>
+
+<p><span class="label label-info">Sample</span> <a href="/versions/nginx_utils-0.0.1/downloads?callback=foo">/versions/nginx_utils-0.0.1/downloads?callback=foo</a></p>
 <pre>/versions/[GEM NAME]-[GEM VERSION]/downloads</pre>
+
+<p><span class="label label-info">Sample</span> <a href="/versions/nginx_utils-0.0.1/downloads/search?from=2013-06-01&to=2013-06-30&?callback=foo">/versions/nginx_utils-0.0.1/downloads/search?from=2013-06-01&to=2013-06-30&?callback=foo</a></p>
 <pre>/versions/[GEM NAME]-[GEM VERSION]/downloads/search?from=[START DATE]&to=[END DATE]</pre>
 </section>
 
 <section id="owner">
 <legend>Owner Methods</legend>
+
+<p><span class="label label-info">Sample</span> <a href="/owners/i2bskn/gems?callback=foo">/owners/i2bskn/gems?callback=foo</a></p>
 <pre>/owners/[USER HANDLE]/gems</pre>
+
+<p><span class="label label-info">Sample</span> <a href="/gems/nginx_utils/owners?callback=foo">/gems/nginx_utils/owners?callback=foo</a></p>
 <pre>/gems/[GEM NAME]/owners</pre>
 </section>
 </div>
 
 <footer class="row-fluid">
 <hr>
-<a href="https://github.com/i2bskn">i2bskn</a>
+Created <a href="https://github.com/i2bskn">i2bskn</a>
 </footer>
 
 </div>
