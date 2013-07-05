@@ -17,7 +17,7 @@ module RubyGemsJsonp
     end
 
     get "/" do
-      "Hello Heroku"
+      erb :index
     end
 
     get "/search" do

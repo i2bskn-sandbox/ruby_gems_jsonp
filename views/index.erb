@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>RubyGems JSONP</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.10.3/build/cssreset/cssreset-min.css">
+  <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/common.css">
+</head>
+
+<body>
+
+<div class="container-fluid">
+
+<header class="row-fluid">
+<h1>RubyGems JSONP</h1>
+</header>
+
+<div class="row-fluid">
+
+<section id="base_url">
+<legend>API Base URL</legend>
+<pre>http://rubygems-jsonp.herokuapp.com</pre>
+
+<p>Can specify a callback to all requests.</p>
+
+<pre>
+curl http://rubygems-jsonp.herokuapp.com/gems/foo?callback=bar
+
+bar(
+  {
+    "status" : 200, // http status code
+    "data" : {
+      // data
+    } // or "parse error"
+  }
+)
+</pre>
+</section>
+
+<section id="gems">
+<legend>Gem Methods</legend>
+<pre>/gems/[GEM NAME]</pre>
+<pre>/search?query=[YOUR QUERY]</pre>
+</section>
+
+<section id="versions">
+<legend>Gem Version Methods</legend>
+<pre>/versions/[GEM NAME]</pre>
+<pre>/downloads</pre>
+<pre>/downloads/top</pre>
+<pre>/downloads/all</pre>
+<pre>/downloads/[GEM NAME]-[GEM VERSION]</pre>
+<pre>/versions/[GEM NAME]-[GEM VERSION]/downloads</pre>
+<pre>/versions/[GEM NAME]-[GEM VERSION]/downloads/search?from=[START DATE]&to=[END DATE]</pre>
+</section>
+
+<section id="owner">
+<legend>Owner Methods</legend>
+<pre>/owners/[USER HANDLE]/gems</pre>
+<pre>/gems/[GEM NAME]/owners</pre>
+</section>
+</div>
+
+<footer class="row-fluid">
+<hr>
+<a href="https://github.com/i2bskn">i2bskn</a>
+</footer>
+
+</div>
+
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+</body>
+</html>
