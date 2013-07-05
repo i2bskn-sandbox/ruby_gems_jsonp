@@ -2,9 +2,9 @@ source "https://rubygems.org"
 
 gem "rake"
 gem "sinatra"
+gem "sinatra-jsonp"
 
 group :development, :test do
-  # gem "sinatra-contrib"
   # gem "rspec"
   # gem "rack-test"
   # gem "simplecov"
