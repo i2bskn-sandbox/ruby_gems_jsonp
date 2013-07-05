@@ -1,6 +1,7 @@
 # RubyGems JSONP
 
 [![Code Climate](https://codeclimate.com/github/i2bskn/ruby_gems_jsonp.png)](https://codeclimate.com/github/i2bskn/ruby_gems_jsonp)
+[![Dependency Status](https://gemnasium.com/i2bskn/ruby_gems_jsonp.png)](https://gemnasium.com/i2bskn/ruby_gems_jsonp)
 
 The wrapper of RubyGems API for JSONP.
 
