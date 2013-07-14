@@ -1,11 +1,15 @@
 # RubyGems JSONP
 
+[![Build Status](https://travis-ci.org/i2bskn/ruby_gems_jsonp.png?branch=master)](https://travis-ci.org/i2bskn/ruby_gems_jsonp)
+[![Coverage Status](https://coveralls.io/repos/i2bskn/ruby_gems_jsonp/badge.png?branch=master)](https://coveralls.io/r/i2bskn/ruby_gems_jsonp?branch=master)
 [![Code Climate](https://codeclimate.com/github/i2bskn/ruby_gems_jsonp.png)](https://codeclimate.com/github/i2bskn/ruby_gems_jsonp)
 [![Dependency Status](https://gemnasium.com/i2bskn/ruby_gems_jsonp.png)](https://gemnasium.com/i2bskn/ruby_gems_jsonp)
 
 The wrapper of RubyGems API for JSONP.
 
-URL: [http://rubygems-jsonp.herokuapp.com](http://rubygems-jsonp.herokuapp.com)
+#### Application on Heroku
+
+[http://rubygems-jsonp.herokuapp.com](http://rubygems-jsonp.herokuapp.com)
 
 ## Installation
 
@@ -18,6 +22,16 @@ Clone from Github and bundle:
 ## Run
 
     foreman start
+
+## Deploy
+
+#### for Heroku
+
+```
+heroku create
+git push heroku master
+heroku open
+```
 
 ## Contributing
 
